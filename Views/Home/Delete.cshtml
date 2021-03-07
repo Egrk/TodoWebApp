@@ -1,0 +1,23 @@
+﻿@model TodoWA.Models.Task
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Удаление задачи</title>
+</head>
+<body>
+    <h3><a href="~/Home/Index">Назад</a></h3>
+    <form method="post">
+        <h3>Вы уверены что хотите удалить задачу @Model.Name?</h3>
+        <table>
+            <tr>
+                <td><input type="hidden" name="Id" value="@Model.Id" /></td>
+            </tr>
+            <tr><td><input type="submit" value="Да" /> </td></tr>
+        </table>
+    </form>
+</body>
+</html>

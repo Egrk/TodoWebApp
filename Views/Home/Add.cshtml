@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавление задачи</title>
+    <style>        
+        textarea {
+        resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h3><a href="~/Home/Index">Назад</a></h3>
+    <div>
+        <h3>Добавление задачи</h3>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Заголовок:</td>
+                    <td><input type="text" name="Name" /> </td>
+                </tr>
+                <tr>
+                    <td>Дата и время:</td>
+                    <td><input type="time" class="form-control" name="Time" /><input type="date" class="form-control" name="Date" /></td>
+                </tr>
+            </table>
+            <label for="story">Описание:</label><br />
+            <textarea id="story" name="Description" rows="5" cols="34"></textarea><br />
+            <input type="submit" value="Отправить" />
+        </form>
+    </div>
+</body>
+</html>

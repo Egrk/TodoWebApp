@@ -1,0 +1,37 @@
+﻿@model IEnumerable<TodoWA.Models.Task>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Задачи</title>
+</head>
+<body>
+    <h3><a href="~/Home/Add">Добавить</a></h3>
+    <h3>Задачи</h3>
+    <table>
+        <tr>
+            <td>Заголовок</td>
+            <td>Описание</td>
+            <td>Дата</td>
+            <td>Время</td>
+            <td>Состояние</td>
+            <td></td>
+        </tr>
+        @foreach (var task in Model)
+        {
+    <tr>
+        <td>@task.Name</td>
+        <td>@task.Description</td>
+        <td>@task.Date</td>
+        <td>@task.Time</td>
+        <td><input type="checkbox" name="IsDone" value="True" checked="@task.IsDone" disabled /></td>
+        <td><a href="~/Home/Edit/@task.Id">Изменить</a></td>
+        <td><a href="~/Home/Delete/@task.Id">Удалить</a></td>
+    </tr>
+        }
+    </table>
+</body>
+</html>
