@@ -4,7 +4,7 @@
 
 Простое веб-приложение списка задач с 4 страницами и API интерфейсом.
 Каждую задачу можно создать, редактировать, пометить выполнение и удалить.
-Задачи хранятся в MS SQL Server Express (встроен в Visual studio 2019).
+Задачи хранятся в MS SQL Server Express LocalDB (встроен в Visual studio 2019).
 
 # API
 Api-интерфейс доступен по URL: https://localhost:<*port*>/api/TasksApi/. Ответы приходят в JSON-формате.
