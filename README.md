@@ -30,7 +30,7 @@ PUT: api/TasksApi/1
 {
     "Id": 1,
     "name": "why are",
-    "description": "you gae",
+    "description": "you here",
     "date": "2025-11-15",
     "time": "17:15",
     "isDone": false
